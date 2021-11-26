@@ -27,30 +27,30 @@
             "Office Address":"Ranchi(jharkhand)",
         }
         console.log(Person);
-        console.log("first person's Full Name  is:" + Person["FirstName"] + "\t" + Person["LastName"]);
+        console.log("First Person's Full Name  is:" + Person["FirstName"] + "\t" + Person["LastName"]);
         console.log("and his office Location is:" + Person["office Address"]);
         // using new keyword to create object 
         var Person = new Object();
-        person.FirstName = "Abraham";
-        person.LastName = "DeVilliers";
-        person.OfficeLocation = "Cape Town";
+        Person.FirstName = "Abraham";
+        Person.LastName = "DeVilliers";
+        Person.OfficeLocation = "Cape Town";
         console.log(Person);
-        console.log("\nSecond person's Full Name  is:" + Person["FirstName"] + "\t" + Person["LastName"]);
+        console.log("\nSecond Person's Full Name  is:" + Person["FirstName"] + "\t" + Person["LastName"]);
         console.log("and his office Location is:" + Person["OfficeLocation"]);
         // Object creation using object constructor
         function Person1(first, last, Office) {
             this.FirstName = first;
-            this.LastName = last;
+            this.lastName = last;
             this.OfficeLocation = Office;
         }
         console.log("\nThis Constructor method is Re-usable. ")
         Person = new Person1("Yuvraj", "Singh", "Chandigarh");
         console.log(Person);
-        console.log("third person's Full Name  is:" + Person.FirstName + "\t" + Person.LastName);
+        console.log("Third Person's Full Name  is:" + Person.FirstName + "\t" + Person.LastName);
         console.log("and his office Location is:" + Person.OfficeLocation);
         Person = new Person1("Saurabh", "Patel", "City park (Jaunpur)");
         console.log(Person);
-        console.log("\nFourth person's Full Name  is:" + Person.FirstName + "\t" +Person.LastName);
+        console.log("\nFourth Person's Full Name  is:" + Person.FirstName + "\t" + Person.LastName);
         console.log("and his office Location is:" + Person.OfficeLocation);
 
     </script>
