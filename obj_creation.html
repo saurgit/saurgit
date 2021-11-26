@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Creation of object</title>
+    <style>
+        h2 {
+            font-style: italic;
+        }
+
+        li {
+            color: rgb(19, 74, 192);
+        }
+
+        .box {
+            background-color: silver;
+            border: 2px solid rgb(204, 8, 188);
+            border-radius: 3px;
+            padding: 4px;
+            margin: 2px;
+        }
+    </style>
+    <script>   // using Object literals to create object
+        var person = {
+            firstName: "Mahendra Singh",
+            lastName: "Dhoni",
+            OfficeLocation: "Ranchi(jharkhand)"
+        }
+        console.log("first person's Full Nmae  is:" + person.firstName + "\t" + person.lastName);
+        console.log("and his office Location is:" + person.OfficeLocation);
+        // using new keyword to create object 
+        var person = new Object();
+        person.firstName = "Abraham";
+        person.lastName = "DeVilliers";
+        person.OfficeLocation = "Cape Town";
+        console.log("\nSecond person's Full Nmae  is:" + person["firstName"] + "\t" + person["lastName"]);
+        console.log("and his office Location is:" + person["OfficeLocation"]);
+        // Object creation using object constructor
+        function person1(first, last, Office) {
+            this.firstName = first;
+            this.lastName = last;
+            this.OfficeLocation = Office;
+        }
+        console.log("\nThis Constructor method is Re-usable. ")
+        var person = new person1("Yuvraj", "Singh", "Chandigarh");
+        console.log("third person's Full Nmae  is:" + person.firstName + "\t" + person.lastName);
+        console.log("and his office Location is:" + person.OfficeLocation);
+        var person = new person1("Saurabh", "Patel", "City park (Jaunpur)");
+        console.log("\nFourth person's Full Nmae  is:" + person.firstName + "\t" + person.lastName);
+        console.log("and his office Location is:" + person.OfficeLocation);
+
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Creation of javaScript Object:</h2>
+        <p>With JavaScript, We can define and create our own objects.</p>
+        <p>There are some following way to create new objects:</p>
+        <ul>
+            <li>Create a single object, using an object literal.</li>
+            <li>Create a single object, with the <b>new</b> keyword.</li>
+            <li>Define an object constructor, and then create objects of the constructed type.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
