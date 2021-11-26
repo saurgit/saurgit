@@ -21,37 +21,37 @@
         }
     </style>
     <script>   // using Object literals to create object
-        var person = {
+        var Person = {
             FirstName: "Mahendra Singh",
             LastName: "Dhoni",
             "Office Address":"Ranchi(jharkhand)",
         }
-        console.log(person);
-        console.log("first person's Full Name  is:" + person["FirstName"] + "\t" + person["LastName"]);
-        console.log("and his office Location is:" + person["office Address"]);
+        console.log(Person);
+        console.log("first person's Full Name  is:" + Person["FirstName"] + "\t" + Person["LastName"]);
+        console.log("and his office Location is:" + Person["office Address"]);
         // using new keyword to create object 
-        var person = new Object();
+        var Person = new Object();
         person.FirstName = "Abraham";
         person.LastName = "DeVilliers";
         person.OfficeLocation = "Cape Town";
-        console.log(person);
-        console.log("\nSecond person's Full Name  is:" + person["FirstName"] + "\t" + person["LastName"]);
-        console.log("and his office Location is:" + person["OfficeLocation"]);
+        console.log(Person);
+        console.log("\nSecond person's Full Name  is:" + Person["FirstName"] + "\t" + Person["LastName"]);
+        console.log("and his office Location is:" + Person["OfficeLocation"]);
         // Object creation using object constructor
-        function person1(first, last, Office) {
+        function Person1(first, last, Office) {
             this.FirstName = first;
             this.LastName = last;
             this.OfficeLocation = Office;
         }
         console.log("\nThis Constructor method is Re-usable. ")
-        person = new person1("Yuvraj", "Singh", "Chandigarh");
-        console.log(person);
-        console.log("third person's Full Name  is:" + person.FirstName + "\t" + person.LastName);
-        console.log("and his office Location is:" + person.OfficeLocation);
-        person = new person1("Saurabh", "Patel", "City park (Jaunpur)");
-        console.log(person);
-        console.log("\nFourth person's Full Name  is:" + person.FirstName + "\t" + person.LastName);
-        console.log("and his office Location is:" + person.OfficeLocation);
+        Person = new Person1("Yuvraj", "Singh", "Chandigarh");
+        console.log(Person);
+        console.log("third person's Full Name  is:" + Person.FirstName + "\t" + Person.LastName);
+        console.log("and his office Location is:" + Person.OfficeLocation);
+        Person = new Person1("Saurabh", "Patel", "City park (Jaunpur)");
+        console.log(Person);
+        console.log("\nFourth person's Full Name  is:" + Person.FirstName + "\t" +Person.LastName);
+        console.log("and his office Location is:" + Person.OfficeLocation);
 
     </script>
 </head>
